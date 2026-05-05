@@ -1,184 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ParkCare - Terms of Use</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParkCare — Terms of Use</title>
+  <meta name="description" content="ParkCare Terms of Use — Parkinson's care companion app." />
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; color: #333; line-height: 1.6; }
-    h1 { color: #029A6B; }
-    h2 { color: #555; margin-top: 32px; }
-    p, li { font-size: 15px; }
-    .lang-switch { text-align: right; margin-bottom: 24px; }
-    .lang-switch a { color: #029A6B; text-decoration: none; font-weight: 600; }
-    .section { margin-bottom: 24px; }
-    footer { margin-top: 48px; border-top: 1px solid #eee; padding-top: 16px; font-size: 13px; color: #999; }
-    .hidden { display: none; }
+    :root {
+      --bg: #faf9f7;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --accent: #029b6a;
+      --rule: #e5e3df;
+      --max: 720px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 32px 0 8px;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 16px;
+    }
+    .lang-switch a {
+      padding: 6px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--muted);
+      border: 1px solid var(--rule);
+      font-size: 14px;
+    }
+    .lang-switch a.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    nav.docs {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    nav.docs a { color: var(--accent); text-decoration: none; }
+    p, li { margin: 8px 0; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    section { display: none; }
+    section.active { display: block; }
+    .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; }
   </style>
 </head>
 <body>
+<main>
+  <nav class="docs">
+    <a href="./">Privacy Policy</a> &nbsp;·&nbsp; <a href="./terms.html">Terms of Use</a>
+  </nav>
+
   <div class="lang-switch">
-    <a href="#" onclick="toggleLang('en'); return false;" id="btn-en"><strong>English</strong></a> |
-    <a href="#" onclick="toggleLang('pt'); return false;" id="btn-pt">Português</a>
+    <a href="#en" id="link-en" class="active">English</a>
+    <a href="#pt" id="link-pt">Português</a>
   </div>
 
-  <!-- ENGLISH -->
-  <div id="lang-en">
-    <h1>Terms of Use</h1>
-    <p><strong>Last updated:</strong> April 30, 2026</p>
+  <!-- ============================ ENGLISH ============================ -->
+  <section id="en" class="active">
+    <h1>Terms of Service — ParkCare</h1>
+    <p class="updated">Last updated: May 2026</p>
 
-    <div class="section">
-      <h2>1. Acceptance of Terms</h2>
-      <p>By downloading, installing, or using ParkCare ("the App"), you agree to be bound by these Terms of Use. If you do not agree, do not use the App.</p>
-    </div>
+    <h2>1. Acceptance of terms</h2>
+    <p>By using ParkCare you agree to these Terms of Service. If you do not agree, please do not use the app.</p>
 
-    <div class="section">
-      <h2>2. Description of Service</h2>
-      <p>ParkCare is a health management application designed for people living with Parkinson's disease. It provides medication tracking, symptom diary, PDF reports, and family sharing features.</p>
-    </div>
+    <h2>2. Service description</h2>
+    <p>ParkCare is a support application for people with Parkinson's disease and their caregivers. We offer:</p>
+    <ul>
+      <li>Medication tracking and reminders</li>
+      <li>Symptom diary</li>
+      <li>Emergency guides</li>
+      <li>Reports to share with healthcare professionals</li>
+    </ul>
 
-    <div class="section">
-      <h2>3. Medical Disclaimer</h2>
-      <p>ParkCare is <strong>not a medical device</strong> and does not provide medical advice, diagnosis, or treatment. Always consult your doctor or qualified healthcare provider regarding any medical condition. Never disregard professional medical advice or delay seeking it because of information provided by the App.</p>
-    </div>
+    <h2>3. Not a medical device</h2>
+    <p>ParkCare does NOT replace medical advice, diagnosis, or treatment. Always consult your doctor before making health decisions for yourself or someone in your care. In medical emergencies, immediately call emergency services (911 in the US).</p>
 
-    <div class="section">
-      <h2>4. Account</h2>
-      <p>You may create an account using your email address. You are responsible for maintaining the confidentiality of your credentials and for all activities under your account.</p>
-    </div>
+    <h2>4. User account</h2>
+    <p>You are responsible for keeping your password confidential and for all activity under your account. Notify us immediately of unauthorized use.</p>
 
-    <div class="section">
-      <h2>5. Subscriptions and Payments</h2>
-      <p>ParkCare offers a free plan with limited features and a Premium subscription with full access.</p>
-      <p>The Premium subscription is available as a monthly plan billed at <strong>$7.99 per month</strong> (price may vary by region).</p>
-      <p>Payment will be charged to your Apple App Store account at confirmation of purchase.</p>
-      <p>Your subscription will automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period.</p>
-      <p>Your account will be charged for renewal within 24 hours prior to the end of the current period.</p>
-      <p>You can manage or turn off auto-renewal in your Apple App Store account settings at any time after purchase.</p>
-      <p>Any unused portion of a free trial period will be forfeited when you purchase a subscription, where applicable.</p>
-    </div>
+    <h2>5. Premium subscription</h2>
+    <ul>
+      <li>The Premium subscription is billed monthly. The exact price is shown on the in-app purchase screen and may vary by region, currency, and applicable taxes.</li>
+      <li>Payment will be charged to your Apple App Store account at confirmation of purchase.</li>
+      <li>Your subscription will automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period.</li>
+      <li>Your account will be charged for renewal within 24 hours prior to the end of the current period.</li>
+      <li>You can cancel your subscription at any time in Settings &gt; Apple ID &gt; Subscriptions.</li>
+      <li>After creating your account you receive an initial period of full access at no cost; any unused portion of that period is forfeited when you purchase a subscription.</li>
+    </ul>
 
-    <div class="section">
-      <h2>6. Free Trial</h2>
-      <p>New users receive a 7-day free trial of Premium features. After the trial expires, access is limited to the free plan unless you subscribe. No charge is made during the trial period.</p>
-    </div>
+    <h2>6. Intellectual property</h2>
+    <p>All app content (code, design, illustrations, text) is our property or licensed to us. You may not copy, modify, or distribute without authorization.</p>
 
-    <div class="section">
-      <h2>7. User Conduct</h2>
-      <p>You agree not to misuse the App, attempt to gain unauthorized access to its systems, or use it for any unlawful purpose.</p>
-    </div>
+    <h2>7. Limitation of liability</h2>
+    <p>ParkCare is provided "as is". We are not liable for damages from use or inability to use the app, including data loss or decisions made based on information shown.</p>
 
-    <div class="section">
-      <h2>8. Intellectual Property</h2>
-      <p>All content, design, and code in ParkCare are owned by ParkCare and protected by intellectual property laws. You may not copy, modify, or distribute any part of the App.</p>
-    </div>
+    <h2>8. Relationship with Apple</h2>
+    <p>The following terms are required by Apple Inc. when this app is distributed via the App Store:</p>
+    <ul>
+      <li>This agreement is solely between you and ParkCare. Apple is not a party to this agreement.</li>
+      <li>Apple has no obligation whatsoever to provide any maintenance or support services for the app.</li>
+      <li>Apple is not responsible for the app or any claims relating to it, including product liability claims, claims that the app fails to conform to any applicable legal or regulatory requirement, and claims arising under consumer protection laws.</li>
+      <li>In the event of any failure of the app to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price; to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever.</li>
+      <li>Apple is not responsible for addressing any third-party intellectual-property claims relating to the app.</li>
+      <li>You represent that you are not located in a country subject to a U.S. Government embargo or designated by the U.S. Government as a "terrorist supporting" country.</li>
+      <li>Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and they may enforce these Terms against you.</li>
+    </ul>
 
-    <div class="section">
-      <h2>9. Limitation of Liability</h2>
-      <p>ParkCare is provided "as is" without warranties of any kind. We are not liable for any damages arising from your use of the App, including but not limited to health decisions made based on information in the App.</p>
-    </div>
+    <h2>9. Modifications</h2>
+    <p>We may update these Terms periodically. Significant changes will be notified in the app.</p>
 
-    <div class="section">
-      <h2>10. Termination</h2>
-      <p>We may suspend or terminate your access to the App at any time for violation of these terms. You may delete your account at any time by contacting us.</p>
-    </div>
+    <h2>10. Contact</h2>
+    <p>For questions or suggestions: <a href="mailto:support@parkcare.app">support@parkcare.app</a></p>
+  </section>
 
-    <div class="section">
-      <h2>11. Changes to Terms</h2>
-      <p>We may update these terms from time to time. Continued use of the App after changes constitutes acceptance of the updated terms.</p>
-    </div>
+  <!-- ============================ PORTUGUÊS ============================ -->
+  <section id="pt">
+    <h1>Termos de Uso — ParkCare</h1>
+    <p class="updated">Última atualização: Maio de 2026</p>
 
-    <div class="section">
-      <h2>12. Contact</h2>
-      <p>If you have questions about these terms, contact us at:<br>
-      <strong>rodrigoragost@gmail.com</strong></p>
-    </div>
-  </div>
+    <h2>1. Aceitação dos termos</h2>
+    <p>Ao usar o ParkCare você concorda com estes Termos de Uso. Se não concordar, por favor não utilize o aplicativo.</p>
 
-  <!-- PORTUGUÊS -->
-  <div id="lang-pt" class="hidden">
-    <h1>Termos de Uso</h1>
-    <p><strong>Última atualização:</strong> 30 de abril de 2026</p>
+    <h2>2. Descrição do serviço</h2>
+    <p>O ParkCare é um aplicativo de apoio para pessoas com doença de Parkinson e seus cuidadores. Oferecemos:</p>
+    <ul>
+      <li>Controle de medicamentos e lembretes</li>
+      <li>Diário de sintomas</li>
+      <li>Guias de emergência</li>
+      <li>Relatórios para compartilhar com profissionais de saúde</li>
+    </ul>
 
-    <div class="section">
-      <h2>1. Aceitação dos Termos</h2>
-      <p>Ao baixar, instalar ou usar o ParkCare ("o Aplicativo"), você concorda com estes Termos de Uso. Se não concordar, não use o Aplicativo.</p>
-    </div>
+    <h2>3. Não é um dispositivo médico</h2>
+    <p>O ParkCare NÃO substitui orientação médica, diagnóstico ou tratamento. Sempre consulte seu médico antes de tomar decisões sobre sua saúde ou de alguém sob seus cuidados. Em emergências médicas, ligue imediatamente para serviços de emergência (192 no Brasil, 911 nos EUA).</p>
 
-    <div class="section">
-      <h2>2. Descrição do Serviço</h2>
-      <p>O ParkCare é um aplicativo de gestão de saúde desenvolvido para pessoas que vivem com a doença de Parkinson. Ele oferece controle de medicamentos, diário de sintomas, relatórios em PDF e compartilhamento familiar.</p>
-    </div>
+    <h2>4. Conta do usuário</h2>
+    <p>Você é responsável por manter a confidencialidade de sua senha e por todas as atividades realizadas em sua conta. Notifique-nos imediatamente em caso de uso não autorizado.</p>
 
-    <div class="section">
-      <h2>3. Aviso Médico</h2>
-      <p>O ParkCare <strong>não é um dispositivo médico</strong> e não fornece aconselhamento médico, diagnóstico ou tratamento. Sempre consulte seu médico ou profissional de saúde qualificado sobre qualquer condição médica. Nunca desconsidere aconselhamento médico profissional ou adie a busca por ele por causa de informações fornecidas pelo Aplicativo.</p>
-    </div>
+    <h2>5. Assinatura Premium</h2>
+    <ul>
+      <li>A assinatura Premium é cobrada mensalmente; o preço é exibido na tela de compra dentro do aplicativo e pode variar por região, moeda e impostos locais.</li>
+      <li>O pagamento será cobrado na sua conta da Apple App Store no momento da confirmação da compra.</li>
+      <li>Sua assinatura será renovada automaticamente, a menos que a renovação automática seja desativada em até 24 horas antes do final do período atual.</li>
+      <li>Sua conta será cobrada pela renovação dentro de 24 horas anteriores ao final do período atual.</li>
+      <li>Você pode cancelar sua assinatura a qualquer momento em Ajustes &gt; Apple ID &gt; Assinaturas.</li>
+      <li>Após criar sua conta, você recebe um período inicial de uso completo gratuito; qualquer parte não utilizada desse período será perdida quando você adquirir uma assinatura.</li>
+    </ul>
 
-    <div class="section">
-      <h2>4. Conta</h2>
-      <p>Você pode criar uma conta usando seu endereço de email. Você é responsável por manter a confidencialidade de suas credenciais e por todas as atividades em sua conta.</p>
-    </div>
+    <h2>6. Propriedade intelectual</h2>
+    <p>Todo o conteúdo do aplicativo (código, design, ilustrações, textos) é de nossa propriedade ou licenciado para nós. Você não pode copiar, modificar ou distribuir sem autorização.</p>
 
-    <div class="section">
-      <h2>5. Assinaturas e Pagamentos</h2>
-      <p>O ParkCare oferece um plano gratuito com recursos limitados e uma assinatura Premium com acesso completo.</p>
-      <p>A assinatura Premium está disponível como plano mensal cobrado a <strong>R$29,90 por mês</strong> (o preço pode variar por região).</p>
-      <p>O pagamento será cobrado na sua conta da Apple App Store no momento da confirmação da compra.</p>
-      <p>Sua assinatura será renovada automaticamente, a menos que a renovação automática seja desativada pelo menos 24 horas antes do final do período atual.</p>
-      <p>Sua conta será cobrada pela renovação dentro de 24 horas antes do final do período atual.</p>
-      <p>Você pode gerenciar ou desativar a renovação automática nas configurações da sua conta da Apple App Store a qualquer momento após a compra.</p>
-      <p>Qualquer parte não utilizada de um período de teste gratuito será perdida quando você adquirir uma assinatura, quando aplicável.</p>
-    </div>
+    <h2>7. Limitação de responsabilidade</h2>
+    <p>O ParkCare é fornecido "como está". Não nos responsabilizamos por danos decorrentes do uso ou impossibilidade de uso do aplicativo, incluindo perda de dados ou decisões tomadas com base nas informações apresentadas.</p>
 
-    <div class="section">
-      <h2>6. Teste Gratuito</h2>
-      <p>Novos usuários recebem um teste gratuito de 7 dias dos recursos Premium. Após o término do teste, o acesso é limitado ao plano gratuito, a menos que você assine. Nenhuma cobrança é feita durante o período de teste.</p>
-    </div>
+    <h2>8. Relação com a Apple</h2>
+    <p>Os seguintes termos são exigidos pela Apple Inc. quando o aplicativo é distribuído pela App Store:</p>
+    <ul>
+      <li>Este contrato é celebrado exclusivamente entre você e ParkCare. A Apple não é parte deste contrato.</li>
+      <li>A Apple não tem qualquer obrigação de prestar suporte ou manutenção ao aplicativo.</li>
+      <li>A Apple não se responsabiliza pelo aplicativo ou por qualquer reivindicação relacionada a ele, incluindo reivindicações de responsabilidade pelo produto, conformidade com leis aplicáveis ou violação de direitos do consumidor.</li>
+      <li>Em caso de falha do aplicativo em atender qualquer garantia aplicável, você pode notificar a Apple, e a Apple reembolsará o preço de compra; além disso, a Apple não terá nenhuma outra obrigação de garantia.</li>
+      <li>A Apple não é responsável por reivindicações de terceiros sobre violação de propriedade intelectual relacionadas ao aplicativo.</li>
+      <li>Você declara que não está localizado em país sob embargo dos EUA ou listado pelo governo dos EUA como país que apoia o terrorismo.</li>
+      <li>A Apple e suas subsidiárias são beneficiárias terceiras destes Termos e podem fazer cumpri-los contra você.</li>
+    </ul>
 
-    <div class="section">
-      <h2>7. Conduta do Usuário</h2>
-      <p>Você concorda em não fazer uso indevido do Aplicativo, tentar obter acesso não autorizado aos seus sistemas ou usá-lo para qualquer finalidade ilegal.</p>
-    </div>
+    <h2>9. Modificações</h2>
+    <p>Podemos atualizar estes Termos periodicamente. Mudanças significativas serão notificadas no aplicativo.</p>
 
-    <div class="section">
-      <h2>8. Propriedade Intelectual</h2>
-      <p>Todo o conteúdo, design e código do ParkCare são de propriedade do ParkCare e protegidos por leis de propriedade intelectual. Você não pode copiar, modificar ou distribuir qualquer parte do Aplicativo.</p>
-    </div>
+    <h2>10. Contato</h2>
+    <p>Para dúvidas ou sugestões: <a href="mailto:support@parkcare.app">support@parkcare.app</a></p>
+  </section>
 
-    <div class="section">
-      <h2>9. Limitação de Responsabilidade</h2>
-      <p>O ParkCare é fornecido "como está", sem garantias de qualquer tipo. Não somos responsáveis por quaisquer danos decorrentes do uso do Aplicativo, incluindo, mas não se limitando a, decisões de saúde tomadas com base em informações do Aplicativo.</p>
-    </div>
+  <p class="footer">© 2026 ParkCare</p>
+</main>
 
-    <div class="section">
-      <h2>10. Rescisão</h2>
-      <p>Podemos suspender ou encerrar seu acesso ao Aplicativo a qualquer momento por violação destes termos. Você pode excluir sua conta a qualquer momento entrando em contato conosco.</p>
-    </div>
-
-    <div class="section">
-      <h2>11. Alterações nos Termos</h2>
-      <p>Podemos atualizar estes termos periodicamente. O uso continuado do Aplicativo após as alterações constitui aceitação dos termos atualizados.</p>
-    </div>
-
-    <div class="section">
-      <h2>12. Contato</h2>
-      <p>Se você tiver dúvidas sobre estes termos, entre em contato conosco em:<br>
-      <strong>rodrigoragost@gmail.com</strong></p>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2026 ParkCare. All rights reserved.
-  </footer>
-
-  <script>
-    function toggleLang(lang) {
-      document.getElementById('lang-en').classList.toggle('hidden', lang !== 'en');
-      document.getElementById('lang-pt').classList.toggle('hidden', lang !== 'pt');
-      document.getElementById('btn-en').innerHTML = lang === 'en' ? '<strong>English</strong>' : 'English';
-      document.getElementById('btn-pt').innerHTML = lang === 'pt' ? '<strong>Português</strong>' : 'Português';
-    }
-  </script>
+<script>
+  const links = { en: document.getElementById('link-en'), pt: document.getElementById('link-pt') };
+  const sections = { en: document.getElementById('en'), pt: document.getElementById('pt') };
+  function show(lang) {
+    Object.keys(sections).forEach(k => {
+      sections[k].classList.toggle('active', k === lang);
+      links[k].classList.toggle('active', k === lang);
+    });
+  }
+  function syncFromHash() {
+    const h = (location.hash || '').replace('#', '');
+    show(h === 'pt' ? 'pt' : 'en');
+  }
+  window.addEventListener('hashchange', syncFromHash);
+  syncFromHash();
+</script>
 </body>
 </html>

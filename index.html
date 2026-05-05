@@ -1,182 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ParkCare - Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParkCare — Privacy Policy</title>
+  <meta name="description" content="ParkCare Privacy Policy — Parkinson's care companion app." />
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; color: #333; line-height: 1.6; }
-    h1 { color: #029A6B; }
-    h2 { color: #555; margin-top: 32px; }
-    p, li { font-size: 15px; }
-    .lang-switch { text-align: right; margin-bottom: 24px; }
-    .lang-switch a { color: #029A6B; text-decoration: none; font-weight: 600; }
-    .section { margin-bottom: 24px; }
-    footer { margin-top: 48px; border-top: 1px solid #eee; padding-top: 16px; font-size: 13px; color: #999; }
-    .hidden { display: none; }
+    :root {
+      --bg: #faf9f7;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --accent: #029b6a;
+      --rule: #e5e3df;
+      --max: 720px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 32px 0 8px;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 16px;
+    }
+    .lang-switch a {
+      padding: 6px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--muted);
+      border: 1px solid var(--rule);
+      font-size: 14px;
+    }
+    .lang-switch a.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    nav.docs {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    nav.docs a { color: var(--accent); text-decoration: none; }
+    p, li { margin: 8px 0; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    section { display: none; }
+    section.active { display: block; }
+    .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; }
   </style>
 </head>
 <body>
+<main>
+  <nav class="docs">
+    <a href="./">Privacy Policy</a> &nbsp;·&nbsp; <a href="./terms.html">Terms of Use</a>
+  </nav>
+
   <div class="lang-switch">
-    <a href="#" onclick="toggleLang('en'); return false;" id="btn-en"><strong>English</strong></a> |
-    <a href="#" onclick="toggleLang('pt'); return false;" id="btn-pt">Português</a>
+    <a href="#en" id="link-en" class="active">English</a>
+    <a href="#pt" id="link-pt">Português</a>
   </div>
 
-  <!-- ENGLISH -->
-  <div id="lang-en">
-    <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> April 27, 2026</p>
+  <!-- ============================ ENGLISH ============================ -->
+  <section id="en" class="active">
+    <h1>Privacy Policy — ParkCare</h1>
+    <p class="updated">Last updated: May 2026</p>
 
-    <div class="section">
-      <h2>1. Introduction</h2>
-      <p>ParkCare ("we", "our", "the app") is a health management application designed for people living with Parkinson's disease. We are committed to protecting your privacy and handling your data responsibly.</p>
-    </div>
+    <h2>1. Data we collect</h2>
+    <p>We only collect data you provide:</p>
+    <ul>
+      <li>Email (for your account)</li>
+      <li>Patient and caregiver name</li>
+      <li>Medications and schedules</li>
+      <li>Symptom records</li>
+      <li>App preferences</li>
+    </ul>
+    <p>We do NOT collect biometric data, location, contacts, or any device data without your explicit consent.</p>
 
-    <div class="section">
-      <h2>2. Data We Collect</h2>
-      <ul>
-        <li><strong>Account information:</strong> email address and encrypted password when you create an account.</li>
-        <li><strong>Health data:</strong> medications, doses, schedules, symptom diary entries (tremor, rigidity, mood, sleep), and medication intake logs. This data is provided voluntarily by you.</li>
-        <li><strong>Subscription data:</strong> subscription status managed through Apple App Store / Google Play via RevenueCat. We do not collect or store payment details.</li>
-      </ul>
-    </div>
+    <h2>2. How we use your data</h2>
+    <p>Your data is used exclusively to:</p>
+    <ul>
+      <li>Make the app work (reminders, sync)</li>
+      <li>Improve your experience</li>
+      <li>Send notifications you configured</li>
+    </ul>
+    <p>We NEVER sell your data. We NEVER share with advertisers.</p>
 
-    <div class="section">
-      <h2>3. How We Use Your Data</h2>
-      <ul>
-        <li>To provide medication reminders and symptom tracking features.</li>
-        <li>To sync your data across devices via your account.</li>
-        <li>To generate health reports you can share with your doctor.</li>
-        <li>To manage your subscription status.</li>
-      </ul>
-      <p>We do <strong>not</strong> sell, share, or use your data for advertising purposes.</p>
-    </div>
+    <h2>3. Where your data lives</h2>
+    <ul>
+      <li>Locally on your device (encrypted)</li>
+      <li>On Supabase servers (secure infrastructure with encryption in transit and at rest)</li>
+    </ul>
 
-    <div class="section">
-      <h2>4. Data Storage & Security</h2>
-      <p>Your data is stored securely using Supabase (cloud infrastructure) with encryption in transit and at rest. Local data is stored on your device using encrypted storage. We implement industry-standard security measures to protect your information.</p>
-    </div>
+    <h2>4. Third-party data processors</h2>
+    <p>To operate the app we rely on the following services. Each one receives only the minimum data required for its function:</p>
+    <ul>
+      <li><strong>Supabase</strong> (database and authentication): stores your email, profile, medications, symptom entries, and subscription state. Servers located in the United States. <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a></li>
+      <li><strong>RevenueCat</strong> (subscription management): receives an opaque account identifier (generated by us) to validate subscriptions with Apple. Does NOT receive email, name, or health data. <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a></li>
+      <li><strong>Sentry</strong> (crash reporting): receives an opaque account identifier and technical error details (device model, iOS version, stack trace). Does NOT receive email, name, medication data, or symptom data. Tokens, passwords, and any sensitive fields are stripped before transmission. <a href="https://sentry.io/privacy/" rel="noopener">sentry.io/privacy</a></li>
+      <li><strong>Apple App Store</strong>: processes all payments. We have no access to your credit card data.</li>
+    </ul>
+    <p>These processors act strictly under our instructions and do not use your data for their own marketing.</p>
 
-    <div class="section">
-      <h2>5. Data Sharing</h2>
-      <p>We do not share your personal data with third parties, except:</p>
-      <ul>
-        <li><strong>RevenueCat:</strong> processes subscription status (no health data is shared).</li>
-        <li><strong>Sentry:</strong> collects anonymous crash reports to improve app stability (no health data is included).</li>
-        <li><strong>Family sharing:</strong> you may voluntarily invite family members to view your data within the app.</li>
-      </ul>
-    </div>
+    <h2>5. Your rights</h2>
+    <p>You can at any time:</p>
+    <ul>
+      <li>Export your data</li>
+      <li>Delete your account (permanently erases all data, including with the processors above)</li>
+      <li>Request corrections</li>
+      <li>Request a report of collected data</li>
+    </ul>
 
-    <div class="section">
-      <h2>6. Your Rights</h2>
-      <p>You can:</p>
-      <ul>
-        <li>Access all your data within the app.</li>
-        <li>Export your data as PDF reports.</li>
-        <li>Delete your account and all associated data by contacting us.</li>
-      </ul>
-    </div>
+    <h2>6. Children</h2>
+    <p>ParkCare is not directed at children under 13. We do not knowingly collect data from children.</p>
 
-    <div class="section">
-      <h2>7. Children's Privacy</h2>
-      <p>ParkCare is not intended for children under 13. We do not knowingly collect data from children.</p>
-    </div>
+    <h2>7. Security</h2>
+    <p>We use encryption for all data in transit (HTTPS/TLS) and at rest. Passwords are hashed. Even our team cannot access your password.</p>
 
-    <div class="section">
-      <h2>8. Changes to This Policy</h2>
-      <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
-    </div>
+    <h2>8. Cookies and tracking</h2>
+    <p>We do not use tracking cookies. We do not integrate with social networks. We do not use advertising or cross-app tracking identifiers (App Tracking Transparency).</p>
 
-    <div class="section">
-      <h2>9. Contact</h2>
-      <p>If you have questions about this privacy policy, contact us at:<br>
-      <strong>rodrigoragost@gmail.com</strong></p>
-    </div>
-  </div>
+    <h2>9. Changes to this policy</h2>
+    <p>We will notify you of significant changes via your registered email.</p>
 
-  <!-- PORTUGUÊS -->
-  <div id="lang-pt" class="hidden">
-    <h1>Política de Privacidade</h1>
-    <p><strong>Última atualização:</strong> 27 de abril de 2026</p>
+    <h2>10. Contact</h2>
+    <p>To exercise your rights or ask questions: <a href="mailto:privacy@parkcare.app">privacy@parkcare.app</a></p>
+  </section>
 
-    <div class="section">
-      <h2>1. Introdução</h2>
-      <p>O ParkCare ("nós", "nosso", "o aplicativo") é um aplicativo de gestão de saúde desenvolvido para pessoas que vivem com a doença de Parkinson. Estamos comprometidos em proteger sua privacidade e tratar seus dados com responsabilidade.</p>
-    </div>
+  <!-- ============================ PORTUGUÊS ============================ -->
+  <section id="pt">
+    <h1>Política de Privacidade — ParkCare</h1>
+    <p class="updated">Última atualização: Maio de 2026</p>
 
-    <div class="section">
-      <h2>2. Dados que Coletamos</h2>
-      <ul>
-        <li><strong>Informações da conta:</strong> endereço de email e senha criptografada ao criar uma conta.</li>
-        <li><strong>Dados de saúde:</strong> medicamentos, doses, horários, registros do diário de sintomas (tremor, rigidez, humor, sono) e registros de tomada de medicamentos. Esses dados são fornecidos voluntariamente por você.</li>
-        <li><strong>Dados de assinatura:</strong> status da assinatura gerenciado pela Apple App Store / Google Play via RevenueCat. Não coletamos nem armazenamos dados de pagamento.</li>
-      </ul>
-    </div>
+    <h2>1. Quais dados coletamos</h2>
+    <p>Coletamos apenas os dados que você fornece:</p>
+    <ul>
+      <li>Email (para sua conta)</li>
+      <li>Nome do paciente e cuidador</li>
+      <li>Medicamentos e horários</li>
+      <li>Registros de sintomas</li>
+      <li>Preferências do aplicativo</li>
+    </ul>
+    <p>NÃO coletamos dados biométricos, localização, contatos ou qualquer dado do dispositivo sem seu consentimento explícito.</p>
 
-    <div class="section">
-      <h2>3. Como Usamos Seus Dados</h2>
-      <ul>
-        <li>Para fornecer lembretes de medicamentos e acompanhamento de sintomas.</li>
-        <li>Para sincronizar seus dados entre dispositivos através da sua conta.</li>
-        <li>Para gerar relatórios de saúde que você pode compartilhar com seu médico.</li>
-        <li>Para gerenciar o status da sua assinatura.</li>
-      </ul>
-      <p>Nós <strong>não</strong> vendemos, compartilhamos ou usamos seus dados para fins publicitários.</p>
-    </div>
+    <h2>2. Como usamos seus dados</h2>
+    <p>Seus dados são usados exclusivamente para:</p>
+    <ul>
+      <li>Fazer o aplicativo funcionar (lembretes, sincronização)</li>
+      <li>Melhorar sua experiência</li>
+      <li>Enviar notificações que você configurou</li>
+    </ul>
+    <p>NUNCA vendemos seus dados. NUNCA compartilhamos com anunciantes.</p>
 
-    <div class="section">
-      <h2>4. Armazenamento e Segurança</h2>
-      <p>Seus dados são armazenados com segurança usando Supabase (infraestrutura em nuvem) com criptografia em trânsito e em repouso. Dados locais são armazenados no seu dispositivo usando armazenamento criptografado. Implementamos medidas de segurança padrão da indústria para proteger suas informações.</p>
-    </div>
+    <h2>3. Onde seus dados ficam</h2>
+    <ul>
+      <li>Localmente no seu dispositivo (criptografado)</li>
+      <li>Nos servidores do Supabase (infraestrutura segura com criptografia em trânsito e em repouso)</li>
+    </ul>
 
-    <div class="section">
-      <h2>5. Compartilhamento de Dados</h2>
-      <p>Não compartilhamos seus dados pessoais com terceiros, exceto:</p>
-      <ul>
-        <li><strong>RevenueCat:</strong> processa o status da assinatura (nenhum dado de saúde é compartilhado).</li>
-        <li><strong>Sentry:</strong> coleta relatórios anônimos de falhas para melhorar a estabilidade do app (nenhum dado de saúde é incluído).</li>
-        <li><strong>Compartilhamento familiar:</strong> você pode convidar voluntariamente familiares para visualizar seus dados dentro do app.</li>
-      </ul>
-    </div>
+    <h2>4. Processadores de dados terceiros</h2>
+    <p>Para operar o aplicativo, usamos os seguintes serviços. Cada um recebe apenas o mínimo necessário para sua função:</p>
+    <ul>
+      <li><strong>Supabase</strong> (banco de dados e autenticação): armazena seu email, perfil, medicamentos, registros de sintomas e estado da assinatura. Servidores localizados nos EUA. <a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a></li>
+      <li><strong>RevenueCat</strong> (gestão de assinaturas): recebe um identificador opaco da sua conta (gerado por nós) para validar assinaturas com a Apple. NÃO recebe email, nome ou dados de saúde. <a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com/privacy</a></li>
+      <li><strong>Sentry</strong> (relatórios de falha): recebe um identificador opaco da sua conta e detalhes técnicos do erro (modelo do dispositivo, versão do iOS, stack trace). NÃO recebe email, nome, dados de medicamentos nem de sintomas. Tokens, senhas e quaisquer campos sensíveis são removidos antes do envio. <a href="https://sentry.io/privacy/" rel="noopener">sentry.io/privacy</a></li>
+      <li><strong>Apple App Store</strong>: processa todos os pagamentos. Não temos acesso a dados do seu cartão de crédito.</li>
+    </ul>
+    <p>Estes processadores atuam estritamente conforme nossas instruções e não usam seus dados para fins próprios de marketing.</p>
 
-    <div class="section">
-      <h2>6. Seus Direitos</h2>
-      <p>Você pode:</p>
-      <ul>
-        <li>Acessar todos os seus dados dentro do aplicativo.</li>
-        <li>Exportar seus dados como relatórios em PDF.</li>
-        <li>Excluir sua conta e todos os dados associados entrando em contato conosco.</li>
-      </ul>
-    </div>
+    <h2>5. Seus direitos</h2>
+    <p>Você pode a qualquer momento:</p>
+    <ul>
+      <li>Exportar seus dados</li>
+      <li>Excluir sua conta (apaga permanentemente todos os dados, incluindo nos processadores acima)</li>
+      <li>Pedir correção de informações</li>
+      <li>Solicitar relatório de dados coletados</li>
+    </ul>
 
-    <div class="section">
-      <h2>7. Privacidade de Crianças</h2>
-      <p>O ParkCare não é destinado a menores de 13 anos. Não coletamos intencionalmente dados de crianças.</p>
-    </div>
+    <h2>6. Crianças</h2>
+    <p>O ParkCare não é direcionado a menores de 13 anos. Não coletamos dados de crianças conscientemente.</p>
 
-    <div class="section">
-      <h2>8. Alterações nesta Política</h2>
-      <p>Podemos atualizar esta política periodicamente. As alterações serão publicadas nesta página com a data atualizada.</p>
-    </div>
+    <h2>7. Segurança</h2>
+    <p>Usamos criptografia em todos os dados em trânsito (HTTPS/TLS) e em repouso. Senhas são armazenadas com hash. Mesmo nossa equipe não tem acesso a sua senha.</p>
 
-    <div class="section">
-      <h2>9. Contato</h2>
-      <p>Se você tiver dúvidas sobre esta política de privacidade, entre em contato conosco em:<br>
-      <strong>rodrigoragost@gmail.com</strong></p>
-    </div>
-  </div>
+    <h2>8. Cookies e rastreamento</h2>
+    <p>Não usamos cookies de rastreamento. Não integramos com redes sociais. Não usamos publicidade nem identificadores para rastreamento entre aplicativos (App Tracking Transparency).</p>
 
-  <footer>
-    &copy; 2026 ParkCare. All rights reserved.
-  </footer>
+    <h2>9. Mudanças nesta política</h2>
+    <p>Notificaremos você sobre mudanças significativas pelo email cadastrado.</p>
 
-  <script>
-    function toggleLang(lang) {
-      document.getElementById('lang-en').classList.toggle('hidden', lang !== 'en');
-      document.getElementById('lang-pt').classList.toggle('hidden', lang !== 'pt');
-      document.getElementById('btn-en').innerHTML = lang === 'en' ? '<strong>English</strong>' : 'English';
-      document.getElementById('btn-pt').innerHTML = lang === 'pt' ? '<strong>Português</strong>' : 'Português';
-    }
-  </script>
+    <h2>10. Contato</h2>
+    <p>Para exercer seus direitos ou tirar dúvidas: <a href="mailto:privacidade@parkcare.app">privacidade@parkcare.app</a></p>
+  </section>
+
+  <p class="footer">© 2026 ParkCare</p>
+</main>
+
+<script>
+  const links = { en: document.getElementById('link-en'), pt: document.getElementById('link-pt') };
+  const sections = { en: document.getElementById('en'), pt: document.getElementById('pt') };
+  function show(lang) {
+    Object.keys(sections).forEach(k => {
+      sections[k].classList.toggle('active', k === lang);
+      links[k].classList.toggle('active', k === lang);
+    });
+  }
+  function syncFromHash() {
+    const h = (location.hash || '').replace('#', '');
+    show(h === 'pt' ? 'pt' : 'en');
+  }
+  window.addEventListener('hashchange', syncFromHash);
+  syncFromHash();
+</script>
 </body>
 </html>
